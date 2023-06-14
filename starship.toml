@@ -1,0 +1,250 @@
+# [prompt]
+add_newline = false
+format = """
+$os\
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_state\
+$git_metrics\
+$git_status\
+$fill\
+$c\
+$golang\
+$nodejs\
+$docker_context\
+$kubernetes\
+$cmd_duration $jobs $memory_usage $time\
+$line_break\
+$shell$character"""
+
+[aws]
+symbol = "  "
+
+[buf]
+symbol = " "
+disabled = true
+
+[c]
+symbol = " "
+
+[character]
+success_symbol = "[❯](purple)"
+error_symbol = "[❯](red)"
+vicmd_symbol = "[❮](green)"
+
+[cmd_duration]
+format = "[$duration]($style)"
+style = "yellow"
+
+[conda]
+symbol = " "
+disabled = true
+
+[dart]
+symbol = " "
+disabled = true
+
+[directory]
+style = "blue"
+read_only = " 󰌾"
+truncation_length = 4
+truncate_to_repo = false
+
+[docker_context]
+symbol = " "
+format = '[$symbol$context]($style)'
+disabled = true
+
+[elixir]
+symbol = " "
+disabled = true
+
+[elm]
+symbol = " "
+disabled = true
+
+[fill]
+symbol = " "
+
+[fossil_branch]
+symbol = " "
+
+[git_branch]
+symbol = " "
+format = "[$symbol$branch]($style) "
+style = "bright-black"
+
+[git_metrics]
+disabled = false
+format = '[+$added]($added_style)/[-$deleted]($deleted_style) '
+
+[git_state]
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+style = "bright-black"
+rebase = " "
+merge = " "
+revert = " "
+cherry_pick = " "
+bisect = " "
+am = "󱋈 "
+am_or_rebase = "󱋈 / "
+
+[git_status]
+format = '[$all_status$ahead_behind]($style)'
+style = "cyan"
+
+[golang]
+symbol = " "
+format = '[$symbol($version )]($style)'
+version_format = '${major}.${minor}'
+
+[guix_shell]
+symbol = " "
+disabled = true
+
+[haskell]
+symbol = " "
+disabled = true
+
+[haxe]
+symbol = "⌘ "
+disabled = true
+
+[hg_branch]
+symbol = " "
+disabled = true
+
+[hostname]
+ssh_symbol = " "
+
+[java]
+symbol = " "
+disabled = true
+
+[jobs]
+symbol = ""
+style = "bold red"
+number_threshold = 1
+format = "[$symbol]($style)"
+
+[julia]
+symbol = " "
+disabled = true
+
+[kubernetes]
+symbol = "󱃾 "
+
+[lua]
+symbol = " "
+disabled = true
+
+[memory_usage]
+symbol = "󰍛 "
+threshold = 0
+disabled = false
+format = '[$symbol${ram}]($style)'
+style = "bold white"
+
+[meson]
+symbol = "󰔷 "
+disabled = true
+
+[nim]
+symbol = "󰆥 "
+disabled = true
+
+[nix_shell]
+symbol = " "
+disabled = true
+
+[nodejs]
+symbol = " "
+
+[os]
+disabled = false
+style = "blue"
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+Amazon = " "
+Android = " "
+Arch = " "
+Artix = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "󰛓 "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+OpenBSD = "󰈺 "
+openSUSE = " "
+OracleLinux = "󰌷 "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+Redox = "󰀘 "
+Solus = "󰠳 "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Windows = "󰍲 "
+
+[package]
+symbol = "󰏗 "
+
+[pijul_channel]
+symbol = "🪺 "
+disabled = true
+
+[python]
+symbol = " "
+disabled = true
+
+[rlang]
+symbol = "󰟔 "
+disabled = true
+
+[ruby]
+symbol = " "
+disabled = true
+
+[rust]
+symbol = " "
+disabled = true
+
+[scala]
+symbol = " "
+disabled = true
+
+[shell]
+disabled = false
+bash_indicator = " "
+powershell_indicator = "󰨊 "
+cmd_indicator = " "
+
+[spack]
+symbol = "🅢 "
+disabled = true
+
+[time]
+disabled = false
+style = "bold white"
+format = "[$time]($style)"

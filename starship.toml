@@ -78,7 +78,6 @@ style = "bright-black"
 
 [git_metrics]
 disabled = false
-format = '[+$added]($added_style)/[-$deleted]($deleted_style) '
 
 [git_state]
 format = '\([$state( $progress_current/$progress_total)]($style)\) '

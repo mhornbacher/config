@@ -1,7 +1,6 @@
 # [prompt]
 add_newline = false
 format = """
-$time \
 $os\
 $kubernetes\
 $username\
@@ -12,7 +11,7 @@ $git_state\
 $git_metrics\
 $git_status\
 $line_break\
-$shell$cmd_duration$character"""
+$time $shell$cmd_duration$character"""
 
 [aws]
 symbol = "  "
